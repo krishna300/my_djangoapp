@@ -1,0 +1,540 @@
+
+C:\>git --version
+git version 2.20.1.windows.1
+
+
+
+C:\> git config --global user.name "Krishna Kondapalli"
+
+C:\> git config --global user.email "srikrishnakvs472@gmail.com"
+
+
+
+C:\> git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=Krishna Kondapalli
+user.email=srikrishnakvs472@gmail.com
+alias.hist=log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
+C:\>cd mysrc
+
+C:\mysrc>git init
+Initialized empty Git repository in C:/mysrc/.git/
+
+C:\mysrc> type nul>my_readme
+
+
+
+
+C:\mysrc>type nul >my_readme.txt
+
+C:\mysrc>my_readme.txt
+
+
+C:\mysrc>echo "hi i am ..">my_readme.txt
+
+C:\mysrc>my_readme.txt
+
+C:\mysrc>echo "hwonderful">>my_readme.txt
+
+C:\mysrc>my_readme.txt
+
+
+
+C:\mysrc>dir>my_readme.txt
+
+C:\mysrc>my_readme.txt
+
+C:\mysrc>echo "hwonderful">my_readme.txt
+
+C:\mysrc>my_readme.txt
+
+C:\mysrc>git init
+Reinitialized existing Git repository in C:/mysrc/.git/
+
+C:\mysrc>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        db.sqlite3
+        hotel/
+        manage.py
+        media/
+        my_readme.txt
+        property/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mysrc>touch .gitignore
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\mysrc>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        db.sqlite3
+        hotel/
+        manage.py
+        media/
+        my_readme.txt
+        property/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mysrc>git add -A
+warning: LF will be replaced by CRLF in .idea/misc.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/modules.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/mysrc.iml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+
+C:\mysrc>git init
+Initialized empty Git repository in C:/mysrc/.git/
+
+C:\mysrc>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        db.sqlite3
+        hotel/
+        manage.py
+        media/
+        my_readme.txt
+        property/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mysrc>git add -A
+
+C:\mysrc>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   db.sqlite3
+        new file:   hotel/__init__.py
+        new file:   hotel/__pycache__/__init__.cpython-37.pyc
+        new file:   hotel/__pycache__/settings.cpython-37.pyc
+        new file:   hotel/__pycache__/urls.cpython-37.pyc
+        new file:   hotel/__pycache__/wsgi.cpython-37.pyc
+        new file:   hotel/settings.py
+        new file:   hotel/urls.py
+        new file:   hotel/wsgi.py
+        new file:   manage.py
+        new file:   media/property/IMG_20180929_134053.jpg
+        new file:   media/property/IMG_20180929_134059.jpg
+        new file:   my_readme.txt
+        new file:   property/__init__.py
+        new file:   property/__pycache__/__init__.cpython-37.pyc
+        new file:   property/__pycache__/admin.cpython-37.pyc
+        new file:   property/__pycache__/apps.cpython-37.pyc
+        new file:   property/__pycache__/models.cpython-37.pyc
+        new file:   property/__pycache__/urls.cpython-37.pyc
+        new file:   property/__pycache__/views.cpython-37.pyc
+        new file:   property/admin.py
+        new file:   property/apps.py
+        new file:   property/migrations/0001_initial.py
+        new file:   property/migrations/0002_auto_20190908_0938.py
+        new file:   property/migrations/__init__.py
+        new file:   property/migrations/__pycache__/0001_initial.cpython-37.pyc
+        new file:   property/migrations/__pycache__/0002_auto_20190908_0938.cpython-37.pyc
+        new file:   property/migrations/__pycache__/__init__.cpython-37.pyc
+        new file:   property/models.py
+        new file:   property/tests.py
+        new file:   property/urls.py
+        new file:   property/views.py
+
+
+C:\mysrc>type nul>my_text.txt
+
+C:\mysrc>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   db.sqlite3
+        new file:   hotel/__init__.py
+        new file:   hotel/__pycache__/__init__.cpython-37.pyc
+        new file:   hotel/__pycache__/settings.cpython-37.pyc
+        new file:   hotel/__pycache__/urls.cpython-37.pyc
+        new file:   hotel/__pycache__/wsgi.cpython-37.pyc
+        new file:   hotel/settings.py
+        new file:   hotel/urls.py
+        new file:   hotel/wsgi.py
+        new file:   manage.py
+        new file:   media/property/IMG_20180929_134053.jpg
+        new file:   media/property/IMG_20180929_134059.jpg
+        new file:   my_readme.txt
+        new file:   property/__init__.py
+        new file:   property/__pycache__/__init__.cpython-37.pyc
+        new file:   property/__pycache__/admin.cpython-37.pyc
+        new file:   property/__pycache__/apps.cpython-37.pyc
+        new file:   property/__pycache__/models.cpython-37.pyc
+        new file:   property/__pycache__/urls.cpython-37.pyc
+        new file:   property/__pycache__/views.cpython-37.pyc
+        new file:   property/admin.py
+        new file:   property/apps.py
+        new file:   property/migrations/0001_initial.py
+        new file:   property/migrations/0002_auto_20190908_0938.py
+        new file:   property/migrations/__init__.py
+        new file:   property/migrations/__pycache__/0001_initial.cpython-37.pyc
+        new file:   property/migrations/__pycache__/0002_auto_20190908_0938.cpython-37.pyc
+        new file:   property/migrations/__pycache__/__init__.cpython-37.pyc
+        new file:   property/models.py
+        new file:   property/tests.py
+        new file:   property/urls.py
+        new file:   property/views.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        my_text.txt
+
+
+C:\mysrc>git reset my_readme.txt
+
+C:\mysrc>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   db.sqlite3
+        new file:   hotel/__init__.py
+        new file:   hotel/__pycache__/__init__.cpython-37.pyc
+        new file:   hotel/__pycache__/settings.cpython-37.pyc
+        new file:   hotel/__pycache__/urls.cpython-37.pyc
+        new file:   hotel/__pycache__/wsgi.cpython-37.pyc
+        new file:   hotel/settings.py
+        new file:   hotel/urls.py
+        new file:   hotel/wsgi.py
+        new file:   manage.py
+        new file:   media/property/IMG_20180929_134053.jpg
+        new file:   media/property/IMG_20180929_134059.jpg
+        new file:   property/__init__.py
+        new file:   property/__pycache__/__init__.cpython-37.pyc
+        new file:   property/__pycache__/admin.cpython-37.pyc
+        new file:   property/__pycache__/apps.cpython-37.pyc
+        new file:   property/__pycache__/models.cpython-37.pyc
+        new file:   property/__pycache__/urls.cpython-37.pyc
+        new file:   property/__pycache__/views.cpython-37.pyc
+        new file:   property/admin.py
+        new file:   property/apps.py
+        new file:   property/migrations/0001_initial.py
+        new file:   property/migrations/0002_auto_20190908_0938.py
+        new file:   property/migrations/__init__.py
+        new file:   property/migrations/__pycache__/0001_initial.cpython-37.pyc
+        new file:   property/migrations/__pycache__/0002_auto_20190908_0938.cpython-37.pyc
+        new file:   property/migrations/__pycache__/__init__.cpython-37.pyc
+        new file:   property/models.py
+        new file:   property/tests.py
+        new file:   property/urls.py
+        new file:   property/views.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        my_readme.txt
+        my_text.txt
+
+
+C:\mysrc>git commit -m "initial one"
+[master (root-commit) 28ce794] initial one
+ 31 files changed, 279 insertions(+)
+ create mode 100644 db.sqlite3
+ create mode 100644 hotel/__init__.py
+ create mode 100644 hotel/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 hotel/__pycache__/settings.cpython-37.pyc
+ create mode 100644 hotel/__pycache__/urls.cpython-37.pyc
+ create mode 100644 hotel/__pycache__/wsgi.cpython-37.pyc
+ create mode 100644 hotel/settings.py
+ create mode 100644 hotel/urls.py
+ create mode 100644 hotel/wsgi.py
+ create mode 100644 manage.py
+ create mode 100644 media/property/IMG_20180929_134053.jpg
+ create mode 100644 media/property/IMG_20180929_134059.jpg
+ create mode 100644 property/__init__.py
+ create mode 100644 property/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 property/__pycache__/admin.cpython-37.pyc
+ create mode 100644 property/__pycache__/apps.cpython-37.pyc
+ create mode 100644 property/__pycache__/models.cpython-37.pyc
+ create mode 100644 property/__pycache__/urls.cpython-37.pyc
+ create mode 100644 property/__pycache__/views.cpython-37.pyc
+ create mode 100644 property/admin.py
+ create mode 100644 property/apps.py
+ create mode 100644 property/migrations/0001_initial.py
+ create mode 100644 property/migrations/0002_auto_20190908_0938.py
+ create mode 100644 property/migrations/__init__.py
+ create mode 100644 property/migrations/__pycache__/0001_initial.cpython-37.pyc
+ create mode 100644 property/migrations/__pycache__/0002_auto_20190908_0938.cpython-37.pyc
+ create mode 100644 property/migrations/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 property/models.py
+ create mode 100644 property/tests.py
+ create mode 100644 property/urls.py
+ create mode 100644 property/views.py
+
+C:\mysrc>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        my_readme.txt
+        my_text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mysrc>git add my_text.txt
+
+C:\mysrc>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   my_text.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        my_readme.txt
+
+
+C:\mysrc>git commit -m "second one"
+[master a652844] second one
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 my_text.txt
+
+C:\mysrc>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        my_readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mysrc>git log
+commit a652844f3260179a48dc9692753236d79ea098b8 (HEAD -> master)
+Author: Krishna Kondapalli <srikrishnakvs472@gmail.com>
+Date:   Mon Sep 9 10:42:08 2019 +0530
+
+    second one
+
+commit 28ce794e0dbfae1a63ad4f178351f974a1d0320d
+Author: Krishna Kondapalli <srikrishnakvs472@gmail.com>
+Date:   Mon Sep 9 10:40:17 2019 +0530
+
+    initial one
+
+C:\mysrc>git remote -v
+
+C:\mysrc>git branch -a
+* master
+
+C:\mysrc>git remote -v
+
+C:\mysrc>git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\mysrc>git push my_djangoapp master
+fatal: 'my_djangoapp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\mysrc>git push my_djangoapp master https://github.com/krishna300/my_djangoapp.git
+fatal: invalid refspec 'https://github.com/krishna300/my_djangoapp.git'
+
+C:\mysrc>git remote remove origin
+fatal: No such remote: 'origin'
+
+C:\mysrc>git remote add origin https://github.com/krishna300/my_djangoapp.git
+
+C:\mysrc>git push origin master
+To https://github.com/krishna300/my_djangoapp.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/krishna300/my_djangoapp.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\mysrc>git pull origin master
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/krishna300/my_djangoapp
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+C:\mysrc>git push origin master
+To https://github.com/krishna300/my_djangoapp.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/krishna300/my_djangoapp.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\mysrc>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        my_readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mysrc>
+####################
+
+C:\mysrc>git pull origin master
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/krishna300/my_djangoapp
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+C:\mysrc>git push origin master
+To https://github.com/krishna300/my_djangoapp.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/krishna300/my_djangoapp.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\mysrc>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        my_readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mysrc>git remote -v
+origin  https://github.com/krishna300/my_djangoapp.git (fetch)
+origin  https://github.com/krishna300/my_djangoapp.git (push)
+
+C:\mysrc>git remote rm origin
+
+C:\mysrc>git remote -v
+
+C:\mysrc>git remote add origin https://github.com/krishna300/my_app.git
+
+C:\mysrc>git pull origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/krishna300/my_app.git/' not found
+
+C:\mysrc>git remote add origin https://github.com/krishna300/my_djangoapp.git
+fatal: remote origin already exists.
+
+C:\mysrc>git remote -v
+origin  https://github.com/krishna300/my_app.git (fetch)
+origin  https://github.com/krishna300/my_app.git (push)
+
+C:\mysrc>git remote rm origin
+
+C:\mysrc>git remote add origin https://github.com/krishna300/my_djangoapp.git
+
+C:\mysrc>git remote -v
+origin  https://github.com/krishna300/my_djangoapp.git (fetch)
+origin  https://github.com/krishna300/my_djangoapp.git (push)
+
+C:\mysrc>git pull origin master
+From https://github.com/krishna300/my_djangoapp
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+C:\mysrc>git push origin master
+To https://github.com/krishna300/my_djangoapp.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/krishna300/my_djangoapp.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\mysrc>git push origin master1
+error: src refspec master1 does not match any.
+error: failed to push some refs to 'https://github.com/krishna300/my_djangoapp.git'
+
+C:\mysrc>git branch -a
+* master
+  remotes/origin/master
+
+C:\mysrc>git checkout -b branch1
+Switched to a new branch 'branch1'
+
+C:\mysrc>git push origin branch1
+Enumerating objects: 41, done.
+Counting objects: 100% (41/41), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (41/41), 9.76 MiB | 2.96 MiB/s, done.
+Total 41 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/krishna300/my_djangoapp/pull/new/branch1
+remote:
+To https://github.com/krishna300/my_djangoapp.git
+ * [new branch]      branch1 -> branch1
+
+C:\mysrc>
