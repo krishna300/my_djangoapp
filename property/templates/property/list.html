@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+
+
+{%for property in property_list %}
+
+<h5><a href="{%url 'property:property_detail1' property.id %}">{{property}}</a></h5>
+{% endfor %}
+</body>
+</html>
