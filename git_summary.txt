@@ -1,0 +1,17 @@
+git status
+
+git add -A
+
+git commit -m "initial"
+
+git branch -a
+
+git remote add origin <>
+
+git remote -v
+
+git checkout -b version3
+
+git pull origin version3
+
+git push origin version3
