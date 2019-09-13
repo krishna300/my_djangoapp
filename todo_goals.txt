@@ -1,0 +1,9 @@
+>make poject/app
+
+>views/urls basic setup check
+
+>templete setp...folder..basic
+
+>extend temp/....bootstrap/...make static folder
+
+>

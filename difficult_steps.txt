@@ -1,0 +1,5 @@
+>settings app add
+
+'blog.apps.BlogConfig'
+
+>
